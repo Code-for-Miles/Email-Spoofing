@@ -23,7 +23,7 @@ if echo[:3] != '250':
 
 # Send MAIL FROM command and print server response.
 print 'Sending MAIL FROM Command'
-mailFromCommand = 'MAIL FROM: mulugetaengdaw@gmail.com\r\n'
+mailFromCommand = 'MAIL FROM: youremail@domain.com\r\n'
 clientSocket.send(mailFromCommand)
 echo = clientSocket.recv(1024)
 print echo
@@ -31,7 +31,7 @@ if echo[:3] != '250':
 	print "250 reply not receved from server"
 # Send RCPT TO command and print server response.
 print "Sending RCPT TO command"
-rcptToCommand = 'RCPT TO: mulugetaengdaw@gmail.com\r\n'
+rcptToCommand = 'RCPT TO: youremail@domain.com\r\n'
 clientSocket.send(rcptToCommand)
 echo = clientSocket.recv(1024)
 print echo
